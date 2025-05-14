@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Notification</title>
+    <style>
+        /* CSS for styling the pop-up */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <center><span>
+    <center><div>      
+
+<center><button onclick="showPopup()">Show Popup</button></center>
+
+      </div></center>
+
+    </span></center>
+
+<!-- Popup container -->
+<div id="popup" class="popup" style="display: none;">
+    <p>Hello from HTML!</p>
+
+    <div >
+        <center> 
+            <img src="WhatsApp Image 2022-02-21 at 8.18.00 PM.jpeg" alt=" Image not found"  height="750px" width="325px"  >
+    
+        <h2>सुपारीचे झाड</h2>
+    </center>
+    </div>
+
+
+
+
+     <button onclick="hidePopup()">Close</button>
+</div>
+
+<script>
+    // JavaScript functions to show and hide the popup
+    function showPopup() {
+        document.getElementById('popup').style.display = 'block';
+    }
+
+    function hidePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
+
+
+
+
+</body>
+</html>
